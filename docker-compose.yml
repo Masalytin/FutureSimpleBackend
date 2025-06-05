@@ -30,6 +30,8 @@ services:
     build: .
     ports:
       - '7050:7050'
+    env_file:
+      - .env
     depends_on:
       - db
     restart: always
